@@ -28,5 +28,5 @@ clean <- function()  {
     }
     df <- data.frame(mt)
     names(df) <- nm
-    write.csv(df, file = "meandata.csv")
+    write.table(df, file = "meandata.txt", row.name=FALSE)
 }
